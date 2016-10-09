@@ -5,7 +5,7 @@ masters
 nodes
 
 [nfs]
-mtayer-centos7-1.eng.lab.tlv.redhat.com
+mtayer-centos7-9.eng.lab.tlv.redhat.com
 
 [OSEv3:vars]
 ansible_ssh_user=root
@@ -21,17 +21,19 @@ openshift_hosted_logging_deploy=True
 openshift_hosted_logging_elasticsearch_cluster_size=1
 openshift_hosted_logging_enable_ops_cluster=True
 openshift_hosted_logging_deployer_prefix=docker.io/openshift/origin-
-openshift_hosted_logging_master_public_url=https://mtayer-centos7-1.eng.lab.tlv.redhat.com:8443
-openshift_hosted_logging_ops_hostname=mtayer-centos7-1.eng.lab.tlv.redhat.com
-openshift_hosted_logging_hostname=kibana.example.com
+openshift_hosted_logging_master_public_url=https://mtayer-centos7-9.eng.lab.tlv.redhat.com:8443
+openshift_hosted_logging_ops_hostname=mtayer-centos7-9.ops-logging.eng.lab.tlv.redhat.com
+openshift_hosted_logging_hostname=mtayer-centos7-9.logging.eng.lab.tlv.redhat.com
 
 #metrics
 openshift_hosted_metrics_deploy=True
-openshift_hosted_metrics_public_url=mtayer-centos7-1.eng.lab.tlv.redhat.com
+openshift_hosted_metrics_public_url=mtayer-centos7-9.eng.lab.tlv.redhat.com
 
 [masters]
-mtayer-centos7-1.eng.lab.tlv.redhat.com openshift_scheduleable=True
+mtayer-centos7-9.eng.lab.tlv.redhat.com openshift_scheduleable=True
 
 [nodes]
-mtayer-centos7-1.eng.lab.tlv.redhat.com openshift_node_labels="{'region': 'infra', 'zone': 'default'}" openshift_hostname=mtayer-centos7-1.eng.lab.tlv.redhat.com
-mtayer-centos7-2.eng.lab.tlv.redhat.com openshift_hostname=mtayer-centos7-2.eng.lab.tlv.redhat.com
+mtayer-centos7-9.eng.lab.tlv.redhat.com openshift_node_labels="{'region': 'infra', 'zone': 'default'}" openshift_hostname=mtayer-centos7-9.eng.lab.tlv.redhat.com
+mtayer-centos7-10.eng.lab.tlv.redhat.com openshift_hostname=mtayer-centos7-10.eng.lab.tlv.redhat.com
+mtayer-centos7-11.eng.lab.tlv.redhat.com openshift_hostname=mtayer-centos7-11.eng.lab.tlv.redhat.com
+mtayer-centos7-12.eng.lab.tlv.redhat.com openshift_hostname=mtayer-centos7-12.eng.lab.tlv.redhat.com
