@@ -22,8 +22,8 @@ openshift_hosted_logging_elasticsearch_cluster_size=1
 openshift_hosted_logging_enable_ops_cluster=True
 openshift_hosted_logging_deployer_prefix=docker.io/openshift/origin-
 openshift_hosted_logging_master_public_url=https://vm-48-24.eng.lab.tlv.redhat.com:8443
-openshift_hosted_logging_ops_hostname=vm-48-24.ops-logging.eng.lab.tlv.redhat.com
-openshift_hosted_logging_hostname=vm-48-24.logging.eng.lab.tlv.redhat.com
+openshift_hosted_logging_ops_hostname=vm-48-24-ops-logging.eng.lab.tlv.redhat.com
+openshift_hosted_logging_hostname=vm-48-24-logging.eng.lab.tlv.redhat.com
 
 #metrics
 openshift_hosted_metrics_deploy=True
