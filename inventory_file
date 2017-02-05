@@ -5,13 +5,13 @@ masters
 nodes
 
 [nfs]
-vm-48-24.eng.lab.tlv.redhat.com
+vm-48-242.eng.lab.tlv.redhat.com
 
 [OSEv3:vars]
 ansible_ssh_user=root
 deployment_type=origin
 
-openshift_release=v1.3
+openshift_release=v1.4
 
 # The default identity provider is 'AllowAll'
 #openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/htpasswd'}]
@@ -21,19 +21,22 @@ openshift_hosted_logging_deploy=True
 openshift_hosted_logging_elasticsearch_cluster_size=1
 openshift_hosted_logging_enable_ops_cluster=True
 openshift_hosted_logging_deployer_prefix=docker.io/openshift/origin-
-openshift_hosted_logging_master_public_url=https://vm-48-24.eng.lab.tlv.redhat.com:8443
-openshift_hosted_logging_ops_hostname=vm-48-24-ops-logging.eng.lab.tlv.redhat.com
-openshift_hosted_logging_hostname=vm-48-24-logging.eng.lab.tlv.redhat.com
+openshift_hosted_logging_master_public_url=https://vm-48-242.eng.lab.tlv.redhat.com:8443
+openshift_hosted_logging_ops_hostname=vm-48-243-ops-logging.eng.lab.tlv.redhat.com
+openshift_hosted_logging_hostname=vm-48-243-logging.eng.lab.tlv.redhat.com
+openshift_hosted_logging_elasticsearch_ops_pvc_size=2G
+openshift_hosted_logging_elasticsearch_pvc_size=2G
 
 #metrics
 openshift_hosted_metrics_deploy=True
-openshift_hosted_metrics_public_url=vm-48-24.eng.lab.tlv.redhat.com
+openshift_hosted_metrics_public_url=vm-48-242.eng.lab.tlv.redhat.com
+openshift_master_default_subdomain=eng.lab.tlv.redhat.com
 
 [masters]
-vm-48-24.eng.lab.tlv.redhat.com openshift_scheduleable=True
+vm-48-242.eng.lab.tlv.redhat.com openshift_scheduleable=True
 
 [nodes]
-vm-48-24.eng.lab.tlv.redhat.com openshift_node_labels="{'region': 'infra', 'zone': 'default'}" openshift_hostname=vm-48-24.eng.lab.tlv.redhat.com
-vm-48-37.eng.lab.tlv.redhat.com openshift_hostname=vm-48-37.eng.lab.tlv.redhat.com
-vm-48-38.eng.lab.tlv.redhat.com openshift_hostname=vm-48-38.eng.lab.tlv.redhat.com
-vm-48-39.eng.lab.tlv.redhat.com openshift_hostname=vm-48-39.eng.lab.tlv.redhat.com
+vm-48-242.eng.lab.tlv.redhat.com openshift_hostname=vm-48-242.eng.lab.tlv.redhat.com
+vm-48-243.eng.lab.tlv.redhat.com openshift_node_labels="{'region': 'infra', 'zone': 'default'}" openshift_hostname=vm-48-243.eng.lab.tlv.redhat.com
+vm-48-244.eng.lab.tlv.redhat.com openshift_hostname=vm-48-244.eng.lab.tlv.redhat.com
+vm-48-246.eng.lab.tlv.redhat.com openshift_hostname=vm-48-246.eng.lab.tlv.redhat.com
