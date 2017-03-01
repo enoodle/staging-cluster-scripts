@@ -1,5 +1,3 @@
-# inventory file for two vm nodes.
-
 [OSEv3:children]
 masters
 nodes
@@ -24,8 +22,9 @@ openshift_hosted_logging_deployer_prefix=docker.io/openshift/origin-
 openshift_hosted_logging_master_public_url=https://vm-48-242.eng.lab.tlv.redhat.com:8443
 openshift_hosted_logging_ops_hostname=vm-48-243-ops-logging.eng.lab.tlv.redhat.com
 openshift_hosted_logging_hostname=vm-48-243-logging.eng.lab.tlv.redhat.com
-openshift_hosted_logging_elasticsearch_ops_pvc_size=2G
-openshift_hosted_logging_elasticsearch_pvc_size=2G
+
+openshift_hosted_logging_storage_kind=nfs
+openshift_hosted_loggingops_storage_kind=nfs
 
 #metrics
 openshift_hosted_metrics_deploy=True
