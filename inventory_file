@@ -11,6 +11,16 @@ deployment_type=origin
 
 openshift_release=v1.4
 
+# Set up a future relaease
+# 1. add a repo with future rpms:
+#openshift_additional_repos: [{"id": "centos-future", "baseurl": "https://buildlogs.centos.org/centos/7/paas/x86_64/openshift-future/", "enabled": 1, "gpgcheck": 0}]
+# 2. set the rpm release:
+#openshift_release=3.6
+# 3. set the docker image release ( if it is not be exactly the same as rpm version )
+#openshift_image_tag=v3.6.0-alpha.2
+# 4. disable some checks that may fail because future release has different requirements
+#openshift_disable_check=docker_storage,disk_availability,memory_availability
+
 # The default identity provider is 'AllowAll'
 #openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/htpasswd'}]
 
