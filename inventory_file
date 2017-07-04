@@ -13,7 +13,7 @@ openshift_release=v1.4
 
 # Set up a future relaease
 # 1. add a repo with future rpms:
-#openshift_additional_repos: [{"id": "centos-future", "baseurl": "https://buildlogs.centos.org/centos/7/paas/x86_64/openshift-future/", "enabled": 1, "gpgcheck": 0}]
+#openshift_additional_repos=[{"id": "centos-future", "baseurl": "https://buildlogs.centos.org/centos/7/paas/x86_64/openshift-future/", "enabled": 1, "gpgcheck": 0}]
 # 2. set the rpm release:
 #openshift_release=3.6
 # 3. set the docker image release ( if it is not be exactly the same as rpm version )
