@@ -8,6 +8,7 @@ vm-48-242.eng.lab.tlv.redhat.com
 [OSEv3:vars]
 ansible_ssh_user=root
 deployment_type=origin
+osm_use_cockpit=true
 
 openshift_release=v1.4
 
